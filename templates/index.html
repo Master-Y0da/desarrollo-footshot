@@ -61,9 +61,9 @@
                 <li class="nav-item" >
                   <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
-                <li class="nav-item pl-3">
+              <!--  <li class="nav-item pl-3">
                   <button id="unmuteButton" class="btn btn-outline-success my-2 my-sm-0" type="button">Habilitar sonido</button>
-                </li>
+                </li>-->
               </ul>
             </div>
           </nav>
@@ -72,7 +72,7 @@
 
         <section id="video" style="">
           <div class="embed-responsive embed-responsive-16by9">
-            <video id="vid" muted class="embed-responsive-item" src ="../static/videos/footchico.mp4"  type="video/mp4" autoplay loop>
+            <video id="vid" class="embed-responsive-item" src ="../static/videos/footchico.mp4"  type="video/mp4" controls  >
               Your browser does not support the video tag.
             </video>
           </div>
@@ -158,9 +158,9 @@
 
         <section id="contacto" class=" seccion ">
           <div class="d-flex justify-content-center">
-            <h2>Hablemos</h2>
+            <h2>Hablemos</h2>s
           </div>
-          <div id="contenedor" class="container d-flex justify-content-between">
+          <div id="contenedor" class="container d-flex flex-column flex-lg-row flex-md-row flex-wrap align-items-center justify-content-between mt-3">
 
             <div>
               <i class="far fa-envelope fa-3x"></i>
@@ -190,13 +190,13 @@
 
           <article id="form" class="">
 
-            <div class="container d-flex justify-content-around pt-5 pb-5">
+            <div class="container d-flex flex-column justify-content-lg-around flex-lg-row pt-5 pb-5">
 
-              <div id="descripcion" class="card w-25 border-0">
+              <div id="descripcion" class="card border-0">
                 <div class="card-body">
-                  <h5 class="card-title">Envíanos un mensaje</h5>
-                  <p class="card-text">Atenderemos tus consultas dentro de 24 horas.</p>
-                  <div>
+                  <h5 class="card-title text-center">Envíanos un mensaje</h5>
+                  <p class="card-text text-center">Atenderemos tus consultas dentro de 24 horas.</p>
+                  <div class="d-flex flex-sm-row justify-content-around">
                       <i class="fab fa-facebook fa-2x"></i>
                       <i class="fab fa-instagram fa-2x"></i>
                       <i class="fab fa-youtube fa-2x"></i>
@@ -226,7 +226,10 @@
                 <label for="exampleFormControlTextarea1">Mensaje</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
+              <div class="d-flex justify-content-center justify-content-lg-start">
+
                 <button type="submit" id="enviar" class="btn btn-primary">Enviar</button>
+              </div>
               </form>
             </div>
 
@@ -263,18 +266,7 @@
     <script type="text/javascript" src="../static/otros/js/jquery.smoothscroll.min.js"></script>
 
     <script>
-      unmuteButton.addEventListener('click', function() {
-        if($(this).text() == 'Habilitar sonido'){
-          $(this).text("Deshabilitar sonido");
-          var video = document.getElementById('vid');
-          video.muted = false;
-        }
-        else{
-          $(this).text("Habilitar sonido");
-          var video = document.getElementById('vid');
-          video.muted = true;
-        }
-      });
+
     </script>
     <script type="text/javascript">
       $(document).ready(function() {
