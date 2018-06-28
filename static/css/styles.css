@@ -29,13 +29,19 @@ li span{
 
 #lanzamiento p{
   font-weight: bold;
-  color: #70caf0;
+  background-color: #70caf0;
+  color:#fff;
+  border-radius: 8px;
+  padding: 8px;
 }
 #map {
   width: 100%;
   height: 400px;
 }
-i{
+.i1{
+  color: #be1522;
+}
+.i2{
   color: #70caf0;
 }
 #enviar{
@@ -69,6 +75,12 @@ header{
 img{
   z-index: 0;
 }
+.active > .nav-link{
+  color: #be1522 !important;
+}
+
+
+/*MEDIA QUERYS */
 @media (min-width: 768px) {
   #lanzamiento p{
     font-size: 50px;
