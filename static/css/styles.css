@@ -78,8 +78,18 @@ img{
 .active > .nav-link{
   color: #be1522 !important;
 }
-
-
+.card-footer{
+  background-color: white;
+  border-top: none;
+  height: 40px !important;
+  padding-top: 0px;
+}
+.card-body h5{
+  color: #70caf0;
+}
+.card-body{
+  max-height: 45px !important;
+}
 /*MEDIA QUERYS */
 @media (min-width: 768px) {
   #lanzamiento p{
