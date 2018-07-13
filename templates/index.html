@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../static/otros/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/js/node/plyr/dist/plyr.css">
 
     <title>Footshot</title>
   </head>
@@ -74,8 +75,8 @@
         </header>
 
         <section id="video" style="">
-          <div class="embed-responsive embed-responsive-16by9">
-            <video id="vid" class="embed-responsive-item" src ="../static/videos/footchico.mp4"  type="video/mp4"  >
+          <div class="">
+            <video loop id="player" poster="../static/images/fv.png" src ="../static/videos/footchico.mp4" data-plyr-config='{ "volume": 1,iconUrl: '../static/images/play.png' }'  type="video/mp4"  >
               Your browser does not support the video tag.
             </video>
           </div>
@@ -158,7 +159,7 @@
 
               <div class=" d-flex justify-content-center mt-5" id="card">
                   <div class="card  border-0 text-center" >
-                    <img class="card-img-top img-fluid m-auto rounded-circle" width="160"  style="width: 10rem; height:106px" src="../static/images/fabian.jpg" alt="Card image cap">
+                    <img class="card-img-top img-fluid m-auto rounded-circle" width="160"  src="../static/images/fabian.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Fabián Quiroz</h5>
                     </div>
@@ -167,7 +168,7 @@
                     </div>
                   </div>
                   <div class="card  border-0 text-center" >
-                    <img class="card-img-top img-fluid m-auto rounded-circle" width="160"  style="width: 10rem; height:106px" src="../static/images/Jano.jpg" alt="Card image cap">
+                    <img class="card-img-top img-fluid m-auto rounded-circle" width="160"  src="../static/images/Jano.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Alejandro Carrasco</h5>
                     </div>
@@ -179,7 +180,7 @@
 
               <div class="card-deck d-flex justify-content-between mt-5">
                   <div class="card  border-0 text-center" >
-                    <img class="card-img-top img-fluid m-auto rounded-circle" width="160"  style="width: 10rem; height:106px" src="../static/images/felipe.jpg" alt="Card image cap">
+                    <img class="card-img-top img-fluid m-auto rounded-circle" width="160"  src="../static/images/felipe.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Felipe Cea</h5>
                     </div>
@@ -188,7 +189,7 @@
                     </div>
                   </div>
                   <div class="card  border-0 text-center" >
-                    <img class="card-img-top img-fluid m-auto rounded-circle" width="160"  style="width: 10rem; height:106px" src="../static/images/kat.jpg" alt="Card image cap">
+                    <img class="card-img-top img-fluid m-auto rounded-circle" width="160"  src="../static/images/kat.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Katherine Cid</h5>
                     </div>
@@ -197,7 +198,7 @@
                     </div>
                   </div>
                   <div class="card  border-0 text-center">
-                    <img class="card-img-top img-fluid m-auto rounded-circle" width="160"  style="width: 10rem; height:106px" src="../static/images/Ignacio.jpg" alt="Card image cap">
+                    <img class="card-img-top img-fluid m-auto rounded-circle" width="160"  src="../static/images/Ignacio.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Ignacio</h5>
                     </div>
@@ -206,7 +207,7 @@
                     </div>
                   </div>
                   <div class="card  border-0 text-center">
-                    <img class="card-img-top img-fluid m-auto rounded-circle" width="160"  style="width: 10rem; height:106px" src="../static/images/jpg.jpg" alt="Card image cap">
+                    <img class="card-img-top img-fluid m-auto rounded-circle" width="160"  src="../static/images/jpg.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Juan Pablo</h5>
                     </div>
@@ -215,7 +216,7 @@
                     </div>
                   </div>
                   <div class="card  border-0 text-center">
-                    <img class="card-img-top img-fluid m-auto rounded-circle" width="160"  style="width: 10rem; height:106px" src="../static/images/JP.jpg" alt="Card image cap">
+                    <img class="card-img-top img-fluid m-auto rounded-circle" width="160"  src="../static/images/JP.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Juan Pablo</h5>
                     </div>
@@ -224,7 +225,7 @@
                     </div>
                   </div>
                   <div class="card  border-0 text-center">
-                    <img class="card-img-top img-fluid m-auto rounded-circle" width="160"  style="width: 10rem; height:106px" src="../static/images/carly.jpg" alt="Card image cap">
+                    <img class="card-img-top img-fluid m-auto rounded-circle" width="160"  src="../static/images/carly.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Natalia</h5>
                     </div>
@@ -390,10 +391,8 @@
     <script src="../static/otros/js/easing.js" charset="utf-8"></script>
     <script src="../static/otros/js/compatibility.js" charset="utf-8"></script>
     <script type="text/javascript" src="../static/otros/js/jquery.smoothscroll.min.js"></script>
+    <script src="../static/js/node/plyr/dist/plyr.js"></script>
 
-    <script>
-
-    </script>
     <script type="text/javascript">
       $(document).ready(function() {
         $('a[href*="#"]').smoothscroll({
@@ -401,7 +400,9 @@
           easing: 'swing',
           offset: 0
           });
-          });
+
+        const player = new Plyr(document.getElementById('player'));
+      });
     </script>
   </body>
 </html>
